@@ -13,6 +13,7 @@ int main(int argc, char **argv)
   for (size_t i = 0; i < 10; i++){
     graph.actual_traversal_costs.push_back((double)i*2.0) ;
     graph.policy_output_costs.push_back((double)i*20.0) ;
+    graph.wait_to_enter.push_back(false) ;
   }
   
   pub.publish(graph) ;

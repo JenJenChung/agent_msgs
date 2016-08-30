@@ -10,9 +10,18 @@ void graphCallback(const agent_msgs::UtmGraph& msg)
   std::cout << "Actual traversal costs: " ;
   for (size_t i = 0; i < msg.actual_traversal_costs.size(); i++)
     std::cout << msg.actual_traversal_costs[i] << " " ;
+  
   std::cout << std::endl << "Policy output costs: " ;
   for (size_t i = 0; i < msg.policy_output_costs.size(); i++)
     std::cout << msg.policy_output_costs[i] << " " ;
+  
+  std::cout << std::endl << "Wait to enter? " ;
+  for (size_t i = 0; i < msg.wait_to_enter.size(); i++){
+    if (msg.wait_to_enter[i])
+      std::cout << "yes " ;
+    else
+      std::cout << "no " ;
+  }
   std::cout << std::endl ;
   
 }
