@@ -7,8 +7,12 @@ void graphCallback(const agent_msgs::UtmGraph& msg)
 {
   
   ROS_INFO_STREAM("Graph received:" ) ;
-  for (size_t i = 0; i < msg.link_costs.size(); i++)
-    std::cout << msg.link_costs[i] << " " ;
+  std::cout << "Actual traversal costs: " ;
+  for (size_t i = 0; i < msg.actual_traversal_costs.size(); i++)
+    std::cout << msg.actual_traversal_costs[i] << " " ;
+  std::cout << std::endl << "Policy output costs: " ;
+  for (size_t i = 0; i < msg.policy_output_costs.size(); i++)
+    std::cout << msg.policy_output_costs[i] << " " ;
   std::cout << std::endl ;
   
 }

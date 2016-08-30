@@ -10,8 +10,10 @@ int main(int argc, char **argv)
   
   agent_msgs::UtmGraph graph ;
   
-  for (size_t i = 0; i < 10; i++)
-    graph.link_costs.push_back((double)i*2.0) ;
+  for (size_t i = 0; i < 10; i++){
+    graph.actual_traversal_costs.push_back((double)i*2.0) ;
+    graph.policy_output_costs.push_back((double)i*20.0) ;
+  }
   
   pub.publish(graph) ;
 
