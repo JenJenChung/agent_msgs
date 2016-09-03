@@ -1,3 +1,3 @@
-uint16              parent
-uint16              child
+int16               parent
+int16               child
 
