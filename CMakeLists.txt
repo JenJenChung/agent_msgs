@@ -17,6 +17,7 @@ add_message_files(
   AgentMembership.msg
   UtmGraph.msg
   BoolLog.msg
+  WallUpdate.msg
 )
 
 # Generate added messages and services with any dependencies listed here
