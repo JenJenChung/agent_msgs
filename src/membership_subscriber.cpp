@@ -5,7 +5,7 @@
 void membershipCallback(const agent_msgs::AgentMembership& msg)
 {
   
-  ROS_INFO_STREAM("Membership parent: " << msg.parent << ", child: " << msg.child ) ;
+  ROS_INFO_STREAM("Robot: " << msg.robot_name << ", membership parent: " << msg.parent << ", child: " << msg.child ) ;
   
 }
 

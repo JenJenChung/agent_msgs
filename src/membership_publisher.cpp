@@ -9,6 +9,7 @@ int main(int argc, char **argv)
   ros::Publisher pub = nHandpub.advertise<agent_msgs::AgentMembership>("membership", 10, true);
   
   agent_msgs::AgentMembership msg ;
+  msg.robot_name = "pioneer1" ;
   msg.parent = 0 ;
   msg.child = 1 ;
   
