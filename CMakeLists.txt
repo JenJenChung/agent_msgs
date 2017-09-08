@@ -53,19 +53,19 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(membership_publisher src/membership_publisher.cpp)
-target_link_libraries(membership_publisher ${catkin_LIBRARIES})
-add_dependencies(membership_publisher ${catkin_EXPORTED_TARGETS})
+#add_executable(membership_publisher src/membership_publisher.cpp)
+#target_link_libraries(membership_publisher ${catkin_LIBRARIES})
+#add_dependencies(membership_publisher ${catkin_EXPORTED_TARGETS})
 
-add_executable(membership_subscriber src/membership_subscriber.cpp)
-target_link_libraries(membership_subscriber ${catkin_LIBRARIES})
-add_dependencies(membership_subscriber ${catkin_EXPORTED_TARGETS})
+#add_executable(membership_subscriber src/membership_subscriber.cpp)
+#target_link_libraries(membership_subscriber ${catkin_LIBRARIES})
+#add_dependencies(membership_subscriber ${catkin_EXPORTED_TARGETS})
 
 
-add_executable(graph_publisher src/graph_publisher.cpp)
-target_link_libraries(graph_publisher ${catkin_LIBRARIES})
-add_dependencies(graph_publisher ${catkin_EXPORTED_TARGETS})
+#add_executable(graph_publisher src/graph_publisher.cpp)
+#target_link_libraries(graph_publisher ${catkin_LIBRARIES})
+#add_dependencies(graph_publisher ${catkin_EXPORTED_TARGETS})
 
-add_executable(graph_subscriber src/graph_subscriber.cpp)
-target_link_libraries(graph_subscriber ${catkin_LIBRARIES})
-add_dependencies(graph_subscriber ${catkin_EXPORTED_TARGETS})
+#add_executable(graph_subscriber src/graph_subscriber.cpp)
+#target_link_libraries(graph_subscriber ${catkin_LIBRARIES})
+#add_dependencies(graph_subscriber ${catkin_EXPORTED_TARGETS})
